@@ -1,0 +1,97 @@
+{
+    "title" :                   "Help",    
+    "sub-title" :               "Do you have a problem? We'll try to help.",    
+    "sections" :                {
+        "help-section-01" :         {
+            "title" :                   "help-section-01-title",
+            "after" :                   {
+                "element-type" :        "div",
+                "class" :               "page-section-line",
+                "text" :                "page-section-line"
+            },
+            "fields" :                  {
+                "attempts" :                {
+                    "label" :   "Attempts",
+                    "parts" : {
+                        "aantal" :                  {
+                            "before-content" :          {
+                                "element-type" :    "text",
+                                "style" :           "margin: 0px 0.4em;",
+                                "text" :            "Pogingen: "
+                            },
+                            "content"   :   {
+                                "type" :            "text",
+                                "size" :            "20",
+                                "class" :           ""
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            },
+                            "validate" :    {
+                                "type" :    "positive-number"
+                            },
+                            "after-content" :          {
+                                "element-type" :    "text",
+                                "style" :           "margin: 0px 0.2em;",
+                                "text" :            "keer"
+                            } 
+                        },
+                        "per-periode" :             {
+                            "before-content" :          {
+                                "element-type" :    "text",
+                                "style" :           "margin: 0px 1.2em;",
+                                "text" :            "Binnen "
+                            },
+                            "content"   :   {
+                                "type" :    "text",
+                                "size" :    "20"
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            },
+                            "after-content" :          {
+                                "element-type" :    "text",
+                                "style" :           "margin: 0px 0.2em;",
+                                "text" :            "minuten"
+                            }
+                        }
+                    }
+                },
+                "lock-out-period" :         {
+                    "label" :   "Lock Out",
+                    "parts" : {
+                        "period" :                  {
+                            "content"   :   {
+                                "type" :    "list",
+                                "list-id" :  "protocol"
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "help-section-02" :         {
+            "title" :                   "help-section-02-title",
+            "fields" :                  {
+                "agressiveHardening" :      {
+                    "label" :   "Tighten after period: ",
+                    "parts" : {
+                        "tighten-after-period" :    {
+                            "content"   :   {
+                                "type" :    "text",
+                                "size" :    "30",
+                                "label" :   "tighten after period"
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

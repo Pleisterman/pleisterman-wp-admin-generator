@@ -1,0 +1,38 @@
+{
+    "icon-class"    :       "dashicons dashicons-dashboard",
+    "title"         :       "Test title",
+    "capabilities"  :       "manage_options",
+    "class"         :       "myClass",
+    "sections"      :       {
+        "test-section-01" :         {
+            "title" :                   "test-section-01-title",
+            "fields" :                  {
+                "testinktab01" :      {
+                    "label" :   "Testink tab01 field",
+                    "parts" : {
+                        "field01" :    {
+                            "content"   :   {
+                                "type" :    "text",
+                                "size" :    "10",
+                                "label" :   "veld01"
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            }
+                        },
+                        "field02" :    {
+                            "content"   :   {
+                                "type" :    "text",
+                                "size" :    "10",
+                                "label" :   "veld02"
+                            },
+                            "sanitize" :    {
+                                "type" :    "text"
+                            }
+                        }
+                    }
+                }
+            }
+        }       
+    }
+}

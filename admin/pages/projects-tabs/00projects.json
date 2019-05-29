@@ -1,0 +1,110 @@
+{
+    "icon-class"    :       "dashicons dashicons-admin-page",
+    "title"         :       "Projects",
+    "capabilities"  :       "manage_options",
+    "class"         :       "projects-tab",
+    "lists"         :       [
+        "icons"
+    ],
+    "submit-text"   :       "add project",
+    "submit-class"  :       "submit",
+    "submit-as-button" :    true,
+    "sections"      :       {
+        "section-01" :          {
+            "title" :       "",
+            "fields" :              {
+                "title" :              {
+                    "label" :   "",
+                    "parts" :               {
+                        "Name" :              {
+                            "element" :         "div",
+                            "class" :           "project-tab-title",
+                            "elements" :            [
+                                {
+                                    "element" :     "div",
+                                    "class" :       "",
+                                    "text" :        "Here you can add a new project "
+                                }
+                            ]
+                        }
+                    }
+                },
+                "icon" :              {
+                    "label" :   "",
+                    "parts" :               {
+                        "icon-name" :              {
+                            "element" :         "div",
+                            "class" :           "field-container",
+                            "sanitize" :        {
+                                "type" :    "text"
+                            },
+                            "elements" :            [
+                                {
+                                    "element" :     "span",
+                                    "class" :       "form-label",
+                                    "text" :        "Icon: "
+                                },
+                                {
+                                    "input" :       "dropdown",
+                                    "list-id" :     "icons",
+                                    "type" :        "image",
+                                    "class" :       "icon-dropdown",
+                                    "button-class" :  "icon-dropdown-button",
+                                    "selection-class" :  "icon-dropdown-selection",
+                                    "content-class" :  "icon-dropdown-content"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "project" :              {
+                    "label" :   "",
+                    "parts" :               {
+                        "name" :              {
+                            "element" :         "div",
+                            "class" :           "field-container",
+                            "sanitize" :        {
+                                "type" :    "text"
+                            },
+                            "validate" :        {
+                                "type" :    "not-empty"
+                            },
+                            "elements" :            [
+                                {
+                                    "element" :     "span",
+                                    "class" :       "form-label",
+                                    "text" :        "Project name: "
+                                },
+                                {
+                                    "input" :       "text",
+                                    "placeholder" : "Enter a project name",
+                                    "use-saved-value" : false,
+                                    "size" :        60
+                                }
+                            ]
+                        }
+                    }
+                },
+                "project-action" :              {
+                    "label" :   "",
+                    "parts" :               {
+                        "Add" :              {
+                            "element" :         "div",
+                            "style" :           "display:none",
+                            "sanitize" :        {
+                                "type" :    "text"
+                            },
+                            "elements" :            [
+                                {
+                                    "input" :   "hidden",    
+                                    "use-saved-value" : false,
+                                    "default-value" :    true
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }       
+    }
+}

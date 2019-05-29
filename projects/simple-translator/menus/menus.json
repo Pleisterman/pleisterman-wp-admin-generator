@@ -1,0 +1,26 @@
+{
+    "top-menu"           :   {
+        "page-title"    :  "Pleisteman-Wordpress-Simple-Translator",
+        "menu-title"    :  "SimpleTranslator",
+        "capabilities"  :  "manage_options",
+        "slug"          :  "main",
+        "icon"          :  "dashicons-hammer",
+        "position"      :  "100"
+    },
+    "sub-menus"          :   {
+        "main"              :   {
+            "parent-slug"   :   "main",
+            "page-title"    :   "Pleisteman-Simple-Translator",
+            "menu-title"    :   "Main",
+            "capabilities"  :   "manage_options",
+            "slug"          :   "main"
+        },
+        "help"          :   { 
+            "parent-slug"   :   "main",
+            "page-title"    :   "Help",
+            "menu-title"    :   "Help",
+            "capabilities"  :   "none",
+            "slug"          :   "help"
+        }
+    }
+}

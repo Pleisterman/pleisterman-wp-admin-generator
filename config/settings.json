@@ -1,0 +1,19 @@
+{
+    "plugin-id"         :   "pleisterman-wp-admin-generator", 
+    "app-name"          :   "pleisterman-wp-admin-generator", 
+    "app-title"         :   "Pleisterman Admin Generator", 
+    "projects-slug"     :   "projects",
+    "projects-tab"      :   "projects",
+    "text-domain"       :   "pleisterman-wp-admin-generator",
+    "show-admin-menu"   :   true, 
+    "debug-on"          :   true,
+    "debug-marker"      :   "-----------------------------------------------------------------------------------",
+    "debug-levels"      :   [ "error", "!message", "!admin-init", "!add-css", "!add-js", "!is-ajax",
+                              "!request-needs-handling", "!tabs", "!menu",  
+                              "!load-page", "!register-page", "!open-page", "!lists", "!ajax", "!de-install", 
+                              "!generate", "validate", "sanitize", "!translations", "!projects-tab" ],
+    "debug-js-on"       :   true,
+    "html-generator-elements-no-close"  :   [
+        "input"
+    ]
+}

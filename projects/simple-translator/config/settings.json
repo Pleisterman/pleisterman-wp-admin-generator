@@ -1,0 +1,12 @@
+{
+    "project-app-name"  :   "simple-translator", 
+    "text-domain"       :   "simple-generator",
+    "icon-class"    :       "dashicons dashicons-search",
+    "title"         :       "Simple Translator",
+    "capabilities"  :       "manage_options",
+    "debug-on"          :   true,
+    "debug-levels"      :   [ "error", "!message", "!admin-init", "!add-css", "!add-js", "!request-needs-handling", 
+                              "!load-page", "!register-page", "!open-page", "!save-page", "!ajax", "!de-install", 
+                              "!translations" ],
+    "debug-js-on"       :   true
+}

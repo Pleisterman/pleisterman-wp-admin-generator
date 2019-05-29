@@ -1,0 +1,35 @@
+{
+    "icon-class"    :       "dashicons dashicons-dashboard",
+    "title"         :       "Test title 2",
+    "capabilities"  :       "manage_options",
+    "sections"      :       {
+        "test-section-01" :         {
+            "title" :                   "test-section-01-title",
+            "fields" :                  {
+                "testink-tab02" :      {
+                    "label" :   "Gegevens: ",
+                    "parts" : {
+                        "field01" :    {
+                            "before-content" :          {
+                                "element-type" :    "text",
+                                "style" :           "margin: 0px 1.2em;",
+                                "text" :            "Email: "
+                            },
+                            "content"   :   {
+                                "type" :    "text",
+                                "size" :    "10",
+                                "label" :   "Email adress"
+                            },
+                            "sanitize" :    {
+                                "type" :    "email"
+                            },
+                            "validate" :    {
+                                "type" :    "email"
+                            }
+                        }
+                    }
+                }
+            }
+        }       
+    }
+}

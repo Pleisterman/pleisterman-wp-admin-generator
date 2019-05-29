@@ -1,0 +1,8 @@
+{
+    "vertical-collapse.js" : { 
+        "dependency" :      {
+            "app" :  [ "jquery" ],
+            "version" : false
+        }
+    }
+}
